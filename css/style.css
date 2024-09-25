@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-light-pink: hsl(275, 100%, 97%);
+    --clr-grayish-purple: hsl(292, 16%, 49%);
+    --clr-dark-purple: hsl(292, 42%, 14%);
+    --fw-normal: 400;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.6rem;
+    font-weight: var(--fw-normal);
+    min-height: 100vh;
+    background:
+        url(./../assets/images/background-pattern-mobile.svg) no-repeat center top,
+        var(--clr-light-pink);
+    
+    background-size: 100%, cover;    
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    background-color: var(--clr-white);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.container .header {
+    display: flex; 
+    align-items: center; 
+}
+
+.container .header h1 {
+    color: var(--clr-dark-purple);
+    margin-left: 2rem;
+}
+
+.container .header img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.container .question {
+    border-bottom: 2px solid var(--clr-light-pink);
+}
+
+.container #question-4 {
+    border-bottom: none;
+}
+
+.container .question .question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.container .question .question-header h2 {
+    flex: 1;    
+    font-size: 1.6rem;
+    color: var(--clr-dark-purple);
+    opacity: 0.9;
+}
+
+.container .question .question-header button {
+    width: 2.5rem; 
+    height: 2.5rem;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-color: var(--clr-white);
+    border: none; 
+    cursor: pointer;
+    margin-left: 4rem;
+}
+
+.container .question .question-header .plus-icon-button {
+    background-image: url(../assets/images/icon-plus.svg);
+}
+
+.container .question .question-header .minus-icon-button {
+    background-image: url(../assets/images/icon-minus.svg);
+}
+
+.container .question p {
+    color: var(--clr-grayish-purple);
+    opacity: 0.9;
+    font-size: 1.6rem;
+    margin: 2rem 0;
+    line-height: 2rem;
+}
+
+@media only screen and (min-width: 576px) {
+    body {
+        background:
+            url(./../assets/images/background-pattern-desktop.svg) no-repeat center top,
+            var(--clr-light-pink);;
+    }
+
+    .container {
+        max-width: 60rem;
+        padding: 4rem;
+    }
+}
