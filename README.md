@@ -33,8 +33,6 @@ Users should be able to:
 - Mobile-first workflow
 - Plain Javascript
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
 
 Similar to the [Interactive Rating Component](https://github.com/filipangel/interactive-rating-component) challenge. The CSS and JS were rather straight-forward so this challenge served mostly as a reminder of all the things I've learned about HTML, CSS and manipulating the DOM using plain Javascript.
